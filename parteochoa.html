@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Diseño Multimedia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="flex flex-col sm:flex-row justify-between items-center px-6 sm:px-12 py-4 border-b border-blue-500">
+        <h1 class="text-lg font-bold">
+            Diseño <span class="text-blue-300 font-normal">Multimedia</span>
+        </h1>
+        <nav class="mt-3 sm:mt-0 space-x-6 text-sm font-normal">
+            <a href="#" class="hover:underline">INICIO</a>
+            <a href="#" class="hover:underline">NOSOTROS</a>
+            <a href="#" class="text-blue-400 font-semibold hover:underline">SERVICIOS</a>
+            <a href="#" class="hover:underline">CONTACTO</a>
+        </nav>
+    </header>
+
+    <section class="px-6 sm:px-12 py-6 border-b border-blue-500 flex flex-col sm:flex-row items-center justify-between">
+        <h2 class="font-semibold text-white text-base sm:text-lg mb-4 sm:mb-0">Subscribete a nuestro boletin</h2>
+        <form class="flex w-full sm:w-auto" onsubmit="event.preventDefault()">
+            <input
+                type="email"
+                placeholder="Ingresa el Email"
+                class="text-black px-3 py-1 rounded-l border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required
+            />
+            <button
+                type="submit"
+                class="bg-red-600 hover:bg-red-700 text-white px-4 py-1 rounded-r text-sm font-normal"
+            >
+                Suscribirse
+            </button>
+        </form>
+    </section>
+
+    <main class="bg-gray-100 text-black px-6 sm:px-12 py-8 flex flex-col lg:flex-row gap-6">
+        <section class="flex-1 space-y-4">
+            <h3 class="font-semibold mb-2">Servicios</h3>
+
+            <article class="bg-gray-200 p-4 border border-gray-300">
+                <h4 class="font-bold mb-1">Diseño Web</h4>
+                <p class="text-xs mb-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                    ultricies at, vulputate id lorem. Nulla facilisi.
+                </p>
+                <p class="text-xs">Precio: $300000 - $1000000</p>
+            </article>
+
+            <article class="bg-gray-200 p-4 border border-gray-300">
+                <h4 class="font-bold mb-1">Desarrollo Web</h4>
+                <p class="text-xs mb-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet 
+                    ultricies at, vulputate id lorem. Nulla facilisi.
+                </p>
+                <p class="text-xs">Precio desde: $1000000</p>
+            </article>
+
+            <article class="bg-gray-200 p-4 border border-gray-300">
+                <h4 class="font-bold mb-1">Hosting Web</h4>
+                <p class="text-xs mb-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                    ultricies at, vulputate id lorem. Nulla facilisi.
+                </p>
+                <p class="text-xs">Precio: $300000</p>
+            </article>
+        </section>
+
+        <aside class="w-full lg:w-80 bg-gray-800 p-6">
+            <h4 class="font-bold mb-2 text-white">Que hacemos</h4>
+            <p class="text-xs text-gray-300">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet
+                ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna
+            </p>
+        </aside>
+    </main>
+
+    <footer class="text-center text-white text-xs py-3" style="background-color: #1293d4;">
+        Graphel Desarrollo Web, Copyright © 2017
+    </footer>
+</body>
+</html>
