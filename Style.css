@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #1d1c1c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 35px;
+  }
+  .barra{
+    height: 3px;
+    background-color: #33aadd;
+  }
+
+  .logo span {
+    color: #33aadd;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav .activo {
+    color: #33aadd;
+  }
+
+  a:hover{
+  color: #33aadd;
+  }
+
+
+  
+  .boletin {
+    background-color: #292929;
+    color: white;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .boletin form {
+    display: flex;
+  }
+  
+  .boletin input {
+    padding: 10px;
+    border: none;
+    width: 250px;
+  }
+  
+  .boletin button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contenido {
+    display: flex;
+    margin: 10vh;
+    gap: 50px;
+  }
+  
+  .nosotros {
+    flex: 2;
+    width: 80px;
+  }
+  
+  .nosotros h3 {
+    margin-bottom: 10px;
+  }
+  
+  .nosotros .caja-texto {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  .nosotros img {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .que-hacemos {
+    flex: 1;
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    height: 250px;
+    width: 50px;
+  }
+  
+  footer {
+    background-color: #1ba1e2;
+    color: white;
+    text-align: center;
+    padding: 38px;
+    margin-top: 47px;
+  }
+  
