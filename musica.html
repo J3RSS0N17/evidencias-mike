@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1581320546485-c5c70908d7f1') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 5rem;
+      color: white;
+      text-shadow: 2px 2px 10px #000;
+    }
+    .section {
+      display: flex;
+      align-items: center;
+      padding: 4rem 2rem;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .section-content {
+      max-width: 500px;
+    }
+    .section-content h2 span {
+      color: #e91e63;
+    }
+    .section-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section-content p {
+      margin-bottom: 1.5rem;
+    }
+    .section-content button {
+      padding: 0.8rem 2rem;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .section img {
+      max-width: 300px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .footer {
+      background: url('angel.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    .footer h2 span {
+      color: #e91e63;
+    }
+    .footer button {
+      margin-top: 1rem;
+      padding: 0.8rem 2rem;
+      background: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .bottom-nav {
+      background: #e91e63;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .bottom-nav div {
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MUSIC</h1>
+  </header>
+  
+  <section class="section">
+    <div class="section-content">
+      <h2><span>MUSIC.</span><br>FUN.<br>ENTERTAINMENT.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>GO THERE</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1581320500853-d0b3db1c5937" alt="Music Fun">
+  </section>
+
+  <section class="section">
+    <img src="https://images.unsplash.com/photo-1581320411333-96b9f98bcf8b" alt="Singer">
+    <div class="section-content">
+      <h2><span>LOUDER.</span><br>LIKE IT WAS NEVER<br>BEEN BETTER.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button>GO THERE</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2><span>SOUND VIBES</span><br>WITH COLORS.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <button>GO THERE</button>
+  </footer>
+
+  <div class="bottom-nav">
+    <div>
+      <h4>About</h4>
+      <p>Services</p>
+      <p>Team</p>
+      <p>Work</p>
+    </div>
+    <div>
+      <h4>Product</h4>
+      <p>Features</p>
+      <p>Pricing</p>
+      <p>FAQ</p>
+    </div>
+    <div>
+      <h4>Learn</h4>
+      <p>Resources</p>
+      <p>Blog</p>
+      <p>Case Studies</p>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <p>Facebook</p>
+      <p>Twitter</p>
+      <p>Instagram</p>
+    </div>
+  </div>
+</body>
+</html>
