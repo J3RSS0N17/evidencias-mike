@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apptastico</title>
+  <style>
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+
+    body {font-family: 'Segoe UI', sans-serif; background-color: #f8f8f8; color: #333;}
+
+    header {background: #3d566e; padding: 1rem 2rem; display: flex;
+            justify-content: space-between; align-items: center; color: white; flex-wrap: wrap;}
+
+    header nav a { margin-left: 1rem; text-decoration: none;
+                    color: white; font-weight: bold; }
+
+    .hero { display: flex; flex-wrap: wrap; padding: 4rem 2rem; background: #3d566e;
+            color: white; align-items: center; justify-content: center;}
+
+    .hero img { max-width: 300px; margin-right: 2rem;}
+
+    .hero-content { max-width: 500px;}
+
+    .hero-content h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+
+    .hero-content p { margin-bottom: 1rem;}
+
+    .hero-buttons button { padding: 10px 20px; margin-right: 1rem;
+                        border: none; border-radius: 5px; cursor: pointer; }
+
+    .btn-primary { background: #3498db; color: white; }
+
+    .btn-secondary { background: transparent; color: white; border: 2px solid white; }
+
+    .logos { display: flex; justify-content: center; flex-wrap: wrap; padding: 2rem 1rem;
+            background: #f1f1f1;}
+
+    .logos img { margin: 1rem 2rem; height: 30px;}
+
+    .features { display: flex; justify-content: center; flex-wrap: wrap;
+                text-align: center; padding: 3rem 2rem; background: white;}
+
+    .feature { flex: 1 1 300px; padding: 1rem; }
+
+    .feature img { height: 50px; margin-bottom: 1rem;}
+
+    .projects { padding: 3rem 2rem; background: #f9f9f9;}
+
+    .projects h2 { text-align: center; margin-bottom: 2rem;}
+
+    .project-gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+
+    .project-gallery img { width: 180px; border-radius: 5px;}
+
+    .blog-twitter { display: flex; flex-wrap: wrap; justify-content: center;
+                    padding: 3rem 2rem; background: white;
+                 }
+
+    .blog-section, .twitter-section { flex: 1 1 300px;}
+
+    .blog-entry, .tweet { margin-bottom: 1rem;}
+
+    footer { background: #eaeaea; text-align: center; padding: 1rem;
+            font-size: 0.9rem;}
+
+    footer .social-icons a { margin: 0 8px; text-decoration: none;}
+
+    /* Responsive break */
+    @media (max-width: 768px) { .hero { flex-direction: column; text-align: center;}
+                                .hero img { margin: 0 0 2rem 0;}
+                                .logos { justify-content: space-around;}
+                                .project-gallery img { width: 100%; max-width: 250px;}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><h2>Apptastico</h2></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Fcelular&psig=AOvVaw1cI1oCz7s9g44l1F9M_CCw&ust=1750862111581000&source=images&cd=vfe&opi=89
+    978449&ved=0CBQQjRxqFwoTCICI-smjio4DFQAAAAAdAAAAABAE300x600" alt="iPhone mockup" />
+    <div class="hero-content">
+      <h1>We design iOS apps</h1>
+      <p>Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis.</p>
+      <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary">Request a quote</button>
+        <button class="btn-secondary">See our recent work</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="logos">
+    <img src="https://via.placeholder.com/60x30?text=D" alt="Logo 1">
+    <img src="https://via.placeholder.com/60x30?text=eBay" alt="Logo 2">
+    <img src="https://via.placeholder.com/60x30?text=M" alt="Logo 3">
+    <img src="https://via.placeholder.com/60x30?text=Adidas" alt="Logo 4">
+    <img src="https://via.placeholder.com/60x30?text=EA" alt="Logo 5">
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="https://via.placeholder.com/50" alt="icon1" />
+      <h3>Engaging interfaces</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="btn-primary">Read more</button>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/50" alt="icon2" />
+      <h3>Usable designs</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="btn-primary">Read more</button>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/50" alt="icon3" />
+      <h3>Solid development</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="btn-primary">Read more</button>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Selected projects</h2>
+    <div class="project-gallery">
+      <img src="https://via.placeholder.com/180x280" alt="Project 1" />
+      <img src="https://via.placeholder.com/180x280" alt="Project 2" />
+      <img src="https://via.placeholder.com/180x280" alt="Project 3" />
+      <img src="https://via.placeholder.com/180x280" alt="Project 4" />
+    </div>
+  </section>
+
+  <section class="blog-twitter">
+    <div class="blog-section">
+      <h3>From our blog</h3>
+      <div class="blog-entry">
+        <strong>Our work process reviewed</strong>
+        <p>Phasellus molestie magna non est bibendum non venenatis...</p>
+      </div>
+      <div class="blog-entry">
+        <strong>Who we are at Appcompany</strong>
+        <p>Phasellus molestie magna non est bibendum non venenatis...</p>
+      </div>
+    </div>
+    <div class="twitter-section">
+      <h3>Our Twitter feed</h3>
+      <div class="tweet">@Apptastico: Lorem ipsum dolor sit amet #purus in #blandit.</div>
+      <div class="tweet">@Apptastico: Lorem ipsum dolor sit amet #purus in #blandit.</div>
+      <div class="tweet">@Apptastico: Lorem ipsum dolor sit amet #purus in #blandit.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© Christoffer Jensen 2013</p>
+    <div class="social-icons">
+      <a href="#">🌐</a>
+      <a href="#">🐦</a>
+      <a href="#">💼</a>
+      <a href="#">📷</a>
+    </div>
+  </footer>
+
+</body>
+</html>

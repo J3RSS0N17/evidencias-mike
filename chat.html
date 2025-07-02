@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viñedos del Encanto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --morado: #5e2b76;
+      --verde: #6db56c;
+      --beige: #f8f4ec;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--beige);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--morado), var(--verde));
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+
+    nav {
+      background-color: var(--morado);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1582281298053-755d9f3fdd20');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .section h3 {
+      color: var(--morado);
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: var(--verde);
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Viñedos del Encanto</h1>
+    <p>Donde el vino cuenta historias</p>
+  </header>
+
+  <nav>
+    <a href="#vinos">Nuestros Vinos</a>
+    <a href="#historia">Historia</a>
+    <a href="#visitanos">Visítanos</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Sabores que florecen entre uvas y secretos</h2>
+  </div>
+
+  <section id="vinos" class="section">
+    <h3>Nuestros Vinos</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Vino Tinto Reserva</h4>
+        <p>Cuerpo intenso, aroma a frutos rojos, envejecido en roble.</p>
+      </div>
+      <div class="card">
+        <h4>Blanco Aromático</h4>
+        <p>Notas cítricas y florales, ideal para tardes de verano.</p>
+      </div>
+      <div class="card">
+        <h4>Rosé Encantado</h4>
+        <p>Fresco, afrutado y con un toque dulce. Un romance en cada copa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="historia" class="section">
+    <h3>Nuestra Historia</h3>
+    <p>Desde generaciones, cultivamos la tierra con pasión y paciencia, transformando cada vendimia en una obra de arte líquida.</p>
+  </section>
+
+  <section id="visitanos" class="section">
+    <h3>Visítanos</h3>
+    <p>Estamos en el corazón del valle, donde las viñas bailan con el sol. Agenda tu visita y déjate enamorar.</p>
+  </section>
+
+  <footer>
+    © 2025 Viñedos del Encanto — Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
